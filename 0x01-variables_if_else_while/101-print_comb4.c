@@ -1,44 +1,41 @@
 #include <stdio.h>
-
 /**
- * main - print all possible combinations of two digits
+ * main - print all possible combinations of 3 digits
  *
  * Return: 0
  */
 
 int main(void)
 {
-        int i = 48;
-        int j = 48;
-        int k = 48;
+	int i, j, k;
 
-        while (i < 58)
-        {
-                j = i + 1;
-                while (j < 58)
-                {
-                        k = j + 1;
-                        while (k < 58)
-                        {
-                        putchar(i);
-                        putchar(j);
-                        putchar(k);
+	i = 48;
 
-                        if (i < 55 || j < 56 || k < 57)
-                        {
-                        putchar(44);
-                        putchar(32);
-                        }
+	while (i < 58)
+	{
+		j = i + 1;
+		while (j < 58)
+		{
+			k = j + 1;
+			while (k < 58)
+			{
+				putchar(i);
+				putchar(j);
+				putchar(k);
 
-                        k++;
-                        }
+				if (i < 55 || j < 56 || k < 57)
+				{
+					putchar(44);
+					putchar(32);
+				}
+				k++;
+			}
+			j++;
+		}
+		i++;
+	}
 
-                        j++;
-                }
+	putchar(10);
+	return (0);
 
-                i++;
-        }
-
-        putchar(10);
-        return (0);
 }
