@@ -9,12 +9,10 @@
 
 int main(void)
 {
-	int r;
+	int n;
 
-	print_last_digit(98);
-	print_last_digit(0);
-	r = print_last_digit(-1024);
-	_putchar('0' + r);
-	_putchar('\n');
+	n = add(89, 9);
+	printf("%d\n",n);
+
 	return (0);
 }
