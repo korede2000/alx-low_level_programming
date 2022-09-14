@@ -2,13 +2,13 @@
 #include <stdio.h>
 
 /**
- * natural - compute and prints the sum of multiple of 3 and 5 in
+ * main - compute and prints the sum of multiple of 3 and 5 in
  * the range 1024
  *
  * Return: sum of the numbers
  */
 
-int natural(void)
+int main(void)
 {
 	int i, sum;
 
@@ -23,5 +23,5 @@ int natural(void)
 		i++;
 	}
 	printf("%d\n", sum);
-	return (sum);
+	return (0);
 }
