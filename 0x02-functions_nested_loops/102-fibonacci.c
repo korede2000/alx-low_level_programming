@@ -8,33 +8,25 @@
 
 int main(void)
 {
-	int i, current, previous;
-	unsigned long fibb;
+	int i;
+	long int current, previous, fibb;
 
 	i = 0;
-	previous = 1;
-	current = 2;
-	while (i < 50)
+	previous = 0;
+	current = 1;
+	fibb = 0;
+
+	while (i < 49)
 	{
-		if (i == 0)
-		{
-			printf("%d, ", previous);
-		}
-		else if (i == 1)
-		{
-			printf("%d, ", current);
-		}
-		else
-		{
-			fibb = current + previous;
-			if (i < 49)
-				printf("%lu, ", fibb);
-			else
-				printf("%lu", fibb);
-			previous = current;
-			current = fibb;
-		}
+		fibb = previous + current;
+		printf("%li, ", fibb);
+		previous = current;
+		current = fibb;
+
 		i++;
 	}
+	fibb = previous + current;
+	printf("%li\n", fibb);
+
 	return (0);
 }
