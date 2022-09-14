@@ -27,7 +27,7 @@ int main(void)
 		else
 		{
 			fibb = current + previous;
-			if( i < 49)
+			if (i < 49)
 				printf("%lu, ", fibb);
 			else
 				printf("%lu", fibb);
@@ -36,4 +36,5 @@ int main(void)
 		}
 		i++;
 	}
+	return (0);
 }
