@@ -10,8 +10,7 @@
 int main(void)
 {
 	int i;
-	long int current, previous, fibb;
-	long long int sum;
+	long int current, previous, fibb, sum;
 
 	i = 0;
 	previous = 0;
@@ -28,7 +27,7 @@ int main(void)
 		current = fibb;
 		i++;
 	}
-	printf("%lli\n", sum);
+	printf("%li\n", sum);
 
 	return (0);
 }
