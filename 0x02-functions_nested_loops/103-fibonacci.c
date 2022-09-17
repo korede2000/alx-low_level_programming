@@ -28,7 +28,7 @@ int main(void)
 		current = fibb;
 		i++;
 	}
-	printf("%lld\n", sum);
+	printf("%lli\n", sum);
 
 	return (0);
 }
