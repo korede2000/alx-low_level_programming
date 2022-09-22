@@ -7,7 +7,7 @@
  * Return: pointer to the cpitalized string
  */
 
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
 	int i;
 	int prev;
